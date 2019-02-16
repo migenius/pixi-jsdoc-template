@@ -85,6 +85,10 @@
         bottom: 0;
     }
 
+    li:not(.current) > ul.parent {
+      display:none !important;
+    }
+
     li.item {
         margin-bottom: 8px;
         padding-bottom: 8px;
@@ -94,6 +98,16 @@
             color: @colorNavLink;
             &:hover {
                 color: #fff;
+            }
+        }
+
+        .parent {
+            margin-top: 6px;
+            .subtitle, .title {
+                display: inline;
+                a {
+                    display:inline;
+                }
             }
         }
         .title {
@@ -139,6 +153,13 @@
 
         .itemMembers li.parent a {
             color: @colorNavSpecial;
+        }
+    }
+
+    .children {
+        li.item {
+            border-bottom: none;
+            padding-bottom: 0px;
         }
     }
 
