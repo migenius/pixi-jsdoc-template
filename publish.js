@@ -227,6 +227,12 @@ function prepareTutorialNav(tutorial,parent) {
 function buildNav(members) {
     var nav = [];
 
+    if (members.tutorials.length) {
+        _.each(members.tutorials, function(v) {
+            nav.push(prepareTutorialNav(v));
+        });
+    }
+
     if (members.namespaces.length) {
         _.each(members.namespaces, function (v) {
             nav.push({
@@ -303,12 +309,6 @@ function buildNav(members) {
                     memberof: v.longname
                 })
             });
-        });
-    }
-
-    if (members.tutorials.length) {
-        _.each(members.tutorials, function(v) {
-            nav.push(prepareTutorialNav(v));
         });
     }
 
