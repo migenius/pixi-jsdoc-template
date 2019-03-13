@@ -1,7 +1,7 @@
 {
-  "name": "@pixi/jsdoc-template",
-  "version": "2.4.2",
-  "description": "PixiJS template for JSDoc 3",
+  "name": "@migenius/jsdoc-template",
+  "version": "1.0.0",
+  "description": "migenius template for JSDoc 3",
   "dependencies": {
     "taffydb": "^2.7.2",
     "underscore": "^1.7.0"
@@ -33,9 +33,7 @@
   "keywords": [
     "jsdoc",
     "jsdoc3",
-    "pixi.js",
-    "pixi",
-    "pixijs",
+    "migenius",
     "template"
   ],
   "files": [
@@ -44,10 +42,10 @@
     "publish.js",
     "plugins"
   ],
-  "author": "Matt Karl <matt@mattkarl.com>",
+  "author": "Brendan Hack <brendan@migenius.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/pixijs/pixi-jsdoc-template/issues"
+    "url": "https://github.com/migenius/pixi-jsdoc-template/issues"
   }
 }
